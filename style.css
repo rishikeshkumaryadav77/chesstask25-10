@@ -13,26 +13,29 @@
   border-top-color: coral;
   border-bottom-color: rgb(61, 59, 64);
   border-left-color: rgb(60, 18, 213);
-  height: fit-content;
+   height: fit-content;
+  /* width: fit-content; */
+   
   
 }
 .card{
   display: flex;
   width: fit-content;
+
 }
 
 .card1>div:nth-child(even){
   background-color: black;
   color: white;
-  font-size: 100px;
-  flex: 1px 5px ;
-  text-align: center;
+  
+  
+  
+  
 }
 
 .card1>div:nth-child(odd){
   background-color:white;
-  font-size: 100px;
-  text-align: center;
+  color: black;
   
   
 }
@@ -41,15 +44,14 @@
 .card2>div:nth-child(odd){
   background-color: black;
   color: white;
-  font-size: 100px;
-  text-align: center;
+  
+
   
 }
 
 .card2>div:nth-child(even){
   background-color:white;
-  font-size: 100px;
-  text-align: center;
+
   
 }
 
@@ -86,6 +88,8 @@
 }
 
 
+
+
 /* .card4>div:nth-child(even){
   background-color:white;
   height: 100px;
@@ -97,27 +101,23 @@
 .card5>div:nth-child(odd){
   background-color: white;
   color:goldenrod;
-  font-size: 100px;
-  text-align: center;
-  flex: 1px 1px 100%;
+  
+  
 }
 
 .card5>div:nth-child(even){
   background-color:black;
   color:goldenrod;
-  font-size: 100px;
-  text-align: center;
-  flex: 1px 1px 100%;
+  
+  
 }
 
 
 .card6>div:nth-child(even){
   background-color: white;
   color:goldenrod;
-  font-size: 100px;
-  flex: 1px 1px ;
-  text-align: center;
-  flex: 1px 1px 100%;
+  
+  
   
 }
 
@@ -125,13 +125,44 @@
 .card6>div:nth-child(odd){
   background-color:black;
   color: goldenrod;
-  font-size: 100px;
-  flex: 1px 1px 100%;
-  text-align: center;
+  
   
 }
 
 
 .container  div{
   width: 100%;
+  
+}
+
+
+.first-row{
+  height: 110px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.first-row>div{
+  font-size: 2rem;
+}
+
+
+/* .size{
+  font-size: 4rem;
+} */
+
+.card1,.card2>.first-row>div{
+  text-shadow: 5px 5px 5px red;
+}
+
+.card5,.card6>.first-row>div{
+  text-shadow: 5px 5px 5px black;
+}
+
+.first-row>div:hover{
+  font-size: 7rem;
 }
